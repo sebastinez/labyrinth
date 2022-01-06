@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: monospace;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      bottom: 50px;
+    }
+
+    footer button {
+      padding: 14px 20px;
+      margin: 1rem 0;
+      cursor: pointer;
+    }
+
+    #randomItem {
+      padding: 8rem 0;
+      font-size: 2rem;
+    }
+  </style>
+  <title>Das verrückte Labyrinth</title>
+</head>
+
+<body>
+  <main>
+    <h2>Das verrückte Labyrinth</h2>
+    <div id="randomItem"></div>
+    <div id="alreadyChosen"></div>
+    <footer>
+      <button id="getItem" onclick="getRandomItem()">Next item</button>
+      <a href="./anleitung.pdf">Anleitung</a>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
