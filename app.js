@@ -25,7 +25,7 @@ function filterItems(array) {
 }
 
 function getRandomItem() {
-  if (alreadyChosen.length === items.length) {
+  if (alreadyChosen.length === items.length - 1) {
     alreadyChosen = [];
     document.querySelector("button").innerHTML = "Next item";
   }
@@ -35,7 +35,7 @@ function getRandomItem() {
   console.log(alreadyChosen, filteredItems);
   document.getElementById("randomItem").innerHTML = filteredItems[randomIndex];
   document.getElementById("alreadyChosen").innerHTML = alreadyChosen.join(", ");
-  if (alreadyChosen.length === items.length) {
+  if (alreadyChosen.length === items.length - 1) {
     document.querySelector("button").innerHTML = "Play Again";
   }
 }
