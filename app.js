@@ -12,6 +12,7 @@ function filterItems(array) {
 function getRandomItem() {
   if (alreadyChosen.length === items.length) {
     alreadyChosen = [];
+    document.querySelector("button").innerHTML = "Next item";
   }
   const filteredItems = filterItems(items);
   const randomIndex = Math.floor(Math.random() * filteredItems.length);
