@@ -1,9 +1,24 @@
-const items = ["vela", "dragon", "espada", "trono"];
+const items = [
+  "vela",
+  "dragon",
+  "espada",
+  "trono",
+  "guitarra",
+  "buho",
+  "rana",
+  "payaso",
+  "reloj",
+  "espada",
+  "raton",
+  "casco de caballero",
+  "tesoro"
+];
+
 let alreadyChosen = [];
 
 // Function takes array and filters for subset
 function filterItems(array) {
-  let filtered = array.filter(function(item) {
+  let filtered = array.filter(function (item) {
     return !alreadyChosen.includes(item);
   });
   return filtered;
